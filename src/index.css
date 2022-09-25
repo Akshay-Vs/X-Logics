@@ -68,7 +68,46 @@ input, button, textarea, :focus {
 }
 
 .popup{
-  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 500px;
+  width: 70%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius:5px;
+  z-index: 10;
+  align-content: center;
+  background: rgba(0,0,0,0.09);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  transition:300ms;
 }
 
+.popup.active{
+  transform: translate(-50%, -50%) scale(1);
 
+}
+
+.popup h2{
+  font-weight: 550;
+  color: #ffffff;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup input{
+  width: 80%;
+  height: 40px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3px;
+  font-size: 1.3rem;
+  font-weight: 510;
+  border: 1px solid gray;
+  border-radius: 8px;
+}

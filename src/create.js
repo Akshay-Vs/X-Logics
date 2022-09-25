@@ -1,3 +1,3 @@
 $('#create').click(function() {
-    alert('Create clicked');
+    document.getElementById("popup").classList.add('active');
 });
