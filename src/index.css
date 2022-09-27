@@ -111,3 +111,28 @@ input, button, textarea, :focus {
   border: 1px solid gray;
   border-radius: 8px;
 }
+
+.submit{
+  width: 100px;
+  background-color: #8899a4;
+  margin-top: 35px;
+  padding: 10px 35px;
+  border-radius: 10px;
+  margin-right: 35px;
+  text-align:center;
+  font-weight: 550;
+  font-size: 20px;
+  color:ffffff;
+  cursor: pointer;
+  transition: 200ms;
+  position: absolute;
+  left: 65%;
+}
+
+.submit:hover{
+  box-shadow: 5px 5px 30px rgba(1,1,1,1.2);
+}
+.submit::after{
+  background-color: #8899a4;
+  color:00000;
+}
