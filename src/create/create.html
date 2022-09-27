@@ -6,37 +6,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="create.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   </head>
 
 <body>
   <div class="login-box">
-    <h2>Login</h2>
     <form>
+      <h1> <span style="color: #03e9f4">X</span>-Logics</h1><br>
       <div class="user-box">
-        <input type="text" name="" required="">
-        <label>Username</label>
+        <input type="text" id="name" required="">
+        <label lname>Project Name</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
-        <label>Password</label>
+        <input type="text" id="description" required="My project">
+        <label>Project description</label>
       </div>
-      <a href="#">
+      <div class="user-box">
+        <input type="text" id="path" required="">
+        <label id="lpath">Path to directory</label>
+      </div>
+      <div class="button-box" id="abort">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Back
-      </a>
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Submit
-      </a>
+        Abort
+      </div class="button-box">
+      
+        <div class="button-box" id="create">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Create
+        </a>
+      </div>
     </form>
   </div>
+<script src="create.js"></script>
 </body>
 </html>

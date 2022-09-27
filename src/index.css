@@ -6,9 +6,15 @@ body {
   padding:0;
   font-family: sans-serif;
   background: linear-gradient(#141e30, #243b55);
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;   
 }
 
-
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 .login-box {
   position: absolute;
@@ -129,7 +135,7 @@ body {
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: btn-anim2 1s linear infinite;
+  animation: btn-anim2 0.5s linear infinite;
   animation-delay: .25s
 }
 
@@ -148,7 +154,7 @@ body {
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: btn-anim3 1s linear infinite;
+  animation: btn-anim3 3s linear infinite;
   animation-delay: .5s
 }
 
@@ -167,7 +173,7 @@ body {
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: btn-anim4 1s linear infinite;
+  animation: btn-anim4 0.5s linear infinite;
   animation-delay: .75s
 }
 
