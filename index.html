@@ -1,1 +1,42 @@
-<a href="src/index.html"><h1><b>Click here to start</b></h1></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to X-Logics</title>
+    <link rel="stylesheet" type="text/css" href="src/create/create.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+        RewriteRule .* http://localhost/html/%1 [R=301,L]
+     
+        RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+        RewriteRule .* %1.html [L]
+     </IfModule>
+    <div class="login-box">
+        <form>
+            <h1>Welcome To <span style="color: #03e9f4">X</span>-Logics<br>
+            <span style="color: #03e9f4"> Alpha</span> build</h1><br>
+
+            <div class="button-box" id="start">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Start
+            </div class="button-box">
+        </form>
+    </div>
+
+    <script>
+        $('#start').click(function() {
+            window.location.replace("src");
+        })
+    </script>
+
+</body>
+</html>
